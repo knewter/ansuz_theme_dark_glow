@@ -155,4 +155,21 @@ form#new_comment{
   padding: 10px;
   border-top: 6px solid #999;
   margin-bottom: 10px;
+  color: #555;
+}
+form#new_comment h3{
+  color: black;
+}
+.comments{
+  margin-top: 20px;
+}
+.comments h4{
+  float: right;
+  font-size: 75%;
+  position: relative;
+  top: -38px;
+}
+.comments .comment{
+  border-top: 1px solid #bbb;
+  margin-bottom: 0;
 }
