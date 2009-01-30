@@ -88,6 +88,13 @@ body{
 .blog_post h2{
   margin-bottom: 0;
 }
+.blog_post h2 a{
+  text-decoration: none;
+  color: black;
+}
+.blog_post h2 a:hover {
+  text-decoration: underline;
+}
 .blog_post h3.supplemental{
   font-size: 75%;
   margin-bottom: 10px;
@@ -107,3 +114,45 @@ h2{
 h3, h4, h5{ font-size: 125%; margin-bottom: .5em; }
 p{ margin-bottom: 10px; }
 blockquote{ padding: 10px 20px; }
+
+#sidebar{
+  font-size: 80%;
+}
+
+#sidebar .widget h3{
+  padding: 2px 6px;
+  background-color: #222;
+  color: white;
+  margin-bottom: 2px;
+}
+
+#sidebar .widget li{
+  list-style-type: none;
+  margin-bottom: 1px;
+}
+#sidebar .widget li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 2px 6px;
+  background-color: #444;
+  color: #eee;
+}
+#sidebar .widget li a:hover {
+  background-color: #333;
+  color: white;
+}
+table.subdued th{
+  vertical-align: top;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+table.subdued td{
+  vertical-align: top;
+}
+form#new_comment{
+  background-color: #ddd;
+  padding: 10px;
+  border-top: 6px solid #999;
+  margin-bottom: 10px;
+}
