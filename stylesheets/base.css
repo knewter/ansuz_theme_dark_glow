@@ -123,7 +123,12 @@ h2{
 }
 h3, h4, h5{ font-size: 125%; margin-bottom: .5em; }
 p{ margin-bottom: 10px; }
-blockquote{ padding: 10px 20px; }
+blockquote{ 
+  font-style: oblique;
+  border-left: 2px solid #999;
+  padding: 10px 20px; 
+  background-color: #eee;
+}
 
 #sidebar{
   font-size: 80%;
