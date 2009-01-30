@@ -15,7 +15,6 @@
 	  <%= theme_stylesheet_link_tag 'dark_glow', 'base' -%>
   </head>
   <body>
-    <%= display_standard_flashes -%>
     <div id='wrapper'>
       <div id='content_wrapper'>
         <div id="main">
@@ -27,9 +26,14 @@
           </div>
           <%= render :partial => "page/top_nav" -%>
           <div id='sidebar'>
+            <div class='rss widget'>
+              <h3>Subscribe</h3>
+              <%= link_to(theme_image_tag('dark_glow', 'rss-128.png'), articles_path(:format => :atom)) %>
+            </div>
             <%= render_special 'sidebar' -%>
           </div>
           <div id='content'>
+            <%= display_standard_flashes -%>
             <%= render :partial => "page/breadcrumb" if (@page && (@page != @root)) -%>
             <%= @content_for_layout -%>
             <%= render :partial => "page/child_nav" if (@page && (!@page.children.empty?)) -%>
